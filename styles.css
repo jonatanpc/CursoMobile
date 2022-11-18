@@ -167,6 +167,7 @@ main {
 
 .currency-table--container .table__top-left {
   border-radius: 15px 0 0 0;
+  font-size: 1.6rem;
 }
 .currency-table--container .table__top-right {
   border-radius: 0 15px 0 0;
@@ -458,11 +459,71 @@ main {
 
 .plans-container--slider {
   display: flex;
+  justify-content: center;
+  /* gap: 0px; */
   height: 316px;
   overflow-x: scroll;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
-  /*scroll-snap-type: x proximity;*/
+  scroll-snap-type: x proximity;
+}
+
+.carousel__item {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: carousel-animate-vertical 15s linear infinite;
+}
+
+.carousel__item:nth-child(1) {
+  animation-delay: calc(5s * -1);
+}
+
+.carousel__item:nth-child(2) {
+  animation-delay: calc(5s * 0);
+}
+
+.carousel__item:last-child {
+  animation-delay: calc(-5s * 2);
+}
+
+@keyframes carousel-animate-vertical {
+  0% {
+    transform: translateX(70%) scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%,
+  33.3333333333% {
+    transform: translateX(70%) scale(0.45);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  36.3333333333%,
+  66.6666666667% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 9;
+    visibility: visible;
+  }
+  69.6666666667%,
+  100% {
+    transform: translateX(-70%) scale(0.45);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  103% {
+    transform: translateX(-70%) scale(0.2);
+    opacity: 0;
+    visibility: visible;
+  }
+  /* 100% {
+    transform: translateX(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  } */
 }
 
 .plans-container--slider::-webkit-scrollbar {

@@ -105,32 +105,38 @@
     <h2>Escoge el plan que mejor se ajuste a ti.</h2>
     <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
 </div>
-<section class="plans-container--slider">
-    <article class="plans-container--card">
-                <div class="plan-info-container">
-            <h3 class="plan-card--title">Básico</h3>
-            <p class="plan-card--price"><span>$</span>99</p>
-            <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
-            <button class="plan-card--ca">Escoger este<span></span></button>
+<section class="plans-container--slider" id="plans">
+    <article class="carousel__item">
+        <div class="plans-container--card">
+            <div class="plan-info-container">
+                <h3 class="plan-card--title">Básico</h3>
+                <p class="plan-card--price"><span>$</span>99</p>
+                <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
+                <button class="plan-card--ca">Escoger este<span></span></button>
+            </div>
         </div>
     </article>
-    <article class="plans-container--card">
-        <p class="recommended">Recomendado</p>
-        <div class="plan-info-container">
-            <h3 class="plan-card--title">Pago Anual</h3>
-            <p class="plan-card--price"><span>$</span>99</p>
-            <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
-            <button class="plan-card--ca">Escoger este<span></span></button>
+    <article class="carousel__item">
+        <div class="plans-container--card">
+            <p class="recommended">Recomendado</p>
+            <div class="plan-info-container">
+                <h3 class="plan-card--title">Pago Anual</h3>
+                <p class="plan-card--price"><span>$</span>99</p>
+                <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
+                <button class="plan-card--ca">Escoger este<span></span></button>
+            </div>
         </div>
     </article>
-    <article class="plans-container--card">
-        <div class="plan-info-container">
-    <h3 class="plan-card--title">Pago Anual</h3>
-    <p class="plan-card--price"><span>$</span>99</p>
-    <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
-    <button class="plan-card--ca">Escoger este<span></span></button>
-</div>
-</article>
+    <article class="carousel__item">
+        <div class="plans-container--card">
+            <div class="plan-info-container">
+                <h3 class="plan-card--title">Pago Anual</h3>
+                <p class="plan-card--price"><span>$</span>99</p>
+                <p class="plan-card--saving">* Ahorras $128 coparado al  mensual plan mensual.</p>
+                <button class="plan-card--ca">Escoger este<span></span></button>
+            </div>
+        </div>
+    </article>
 </section>
 </section>
 </main>
@@ -148,4 +154,10 @@
     </section>
 </footer>    
 </body>
+<script>
+    let plansElement = document.getElementById('plans');
+    let scrollWidthMiddle = plansElement.scrollWidth / 2;
+    console.log(scrollWidthMiddle)
+    plansElement.scroll({top: 10,left: 160})
+</script>
 </html>
