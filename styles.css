@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: 62.5;
+  
   font-family: "DM Sans", sans-serif;
 }
 header {
@@ -465,7 +465,14 @@ main {
 .plans-container--slider{
 display: flex;
 height: 316px;
-overflow: hidden;
+overflow-x: scroll;
+overflow-y: hidden;
+overscroll-behavior-x: contain;
+/*scroll-snap-type: x proximity;*/
+}
+
+.plans-container--slider::-webkit-scrollbar{
+display: none;
 }
 
 .plans-container--card{
@@ -483,12 +490,14 @@ overflow: hidden;
 
 .recommended{
   position: absolute;
-  width: 132px;
+  width: 130px;
   height: 35px;
-  padding: 6px;
+  line-height: 14.52px;
+  vertical-align: baseline;
+  padding: 11.5px 8px;
   top: -13px; 
   left: calc(50% - 65px);
-  font-size: 1.2rem;
+  font-size: .75rem;
   background-color: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
