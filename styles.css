@@ -16,7 +16,7 @@
 }
 
 html {
-  
+  font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
 header {
@@ -46,9 +46,9 @@ header img {
   align-self: center;
 }
 .header--title-container h1 {
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   font-weight: bold;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   color: var (--just-white);
 }
 .header--title-container p {
@@ -211,11 +211,8 @@ main {
   padding: 8px;
   background-color: var(--soft-orange);
   border-radius: 8px;
-
-  
 }
 .currency-table--date p {
-  
   font-size: 1rem;
   line-height: 1.6rem;
   color: var(--warm-black);
@@ -333,9 +330,6 @@ main {
   line-height: 1rem;
   color: #808080;
 }
-
-
-
 
 .product-detail--card .dollar {
   display: inline-block;
@@ -462,20 +456,20 @@ main {
   color: #757575;
 }
 
-.plans-container--slider{
-display: flex;
-height: 316px;
-overflow-x: scroll;
-overflow-y: hidden;
-overscroll-behavior-x: contain;
-/*scroll-snap-type: x proximity;*/
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  /*scroll-snap-type: x proximity;*/
 }
 
-.plans-container--slider::-webkit-scrollbar{
-display: none;
+.plans-container--slider::-webkit-scrollbar {
+  display: none;
 }
 
-.plans-container--card{
+.plans-container--card {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
@@ -485,34 +479,33 @@ display: none;
   margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--just-white);
-  box-shadow: 0 4px 8px rgba(89,73,30,0.16 );
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.recommended{
+.recommended {
   position: absolute;
   width: 130px;
   height: 35px;
   line-height: 14.52px;
   vertical-align: baseline;
   padding: 11.5px 8px;
-  top: -13px; 
+  top: -13px;
   left: calc(50% - 65px);
-  font-size: .75rem;
+  font-size: 0.75rem;
   background-color: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
 }
 
-.plan-card--title{
+.plan-card--title {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--black);
-
 }
 
-.plan-card--price{
+.plan-card--price {
   padding: 5px 0;
   font-size: 4rem;
   font-weight: bold;
@@ -520,18 +513,18 @@ display: none;
   color: var(--black);
 }
 
-.plan-card--price span{
+.plan-card--price span {
   font-size: 1rem;
   font-weight: 300;
   vertical-align: text-top;
 }
 
-.plan-card--saving{
+.plan-card--saving {
   font-size: 1rem;
   color: var(#757575);
 }
 
-.plan-card--ca{
+.plan-card--ca {
   width: 150px;
   height: 35px;
   margin-top: 20px;
@@ -543,7 +536,6 @@ display: none;
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--black);
-  
 }
 
 .plan-card--ca span {
@@ -554,14 +546,14 @@ display: none;
   vertical-align: text-bottom;
 }
 
-footer{
+footer {
   display: flex;
   width: 100%;
   height: 150px;
   background-color: var(--bitcoin-orange);
 }
 
-footer section{
+footer section {
   display: flex;
   width: 50%;
   justify-content: center;
@@ -569,19 +561,18 @@ footer section{
 }
 
 footer .left ul {
-font-size: 1.4rem;
-font-weight: 500;
-line-height: 1.8rem;
-list-style: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
 }
 
-.left li{
+.left li {
   margin: 10px 0;
   color: var(--just-white);
 }
 
-.left a{
+.left a {
   text-decoration: none;
   color: var(--just-white);
 }
-
